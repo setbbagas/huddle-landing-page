@@ -1,0 +1,67 @@
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+/* variables */
+:root {
+    /* font family */
+    --ff-heading: "Poppins", sans-serif;
+    --ff-base: "Open Sans", sans-serif;
+    /* font weight */
+    --fw-regular: 400;
+    --fw-semibold: 600;
+    /* color */
+    --clr-primary: hsl(257, 40%, 49%);
+    --clr-accent: hsl(300, 69%, 71%);
+    --clr-neutral: #fff;
+}
+
+/* reset */
+/* box-model */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+/* remove default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* general styling */
+body {
+    /* layout */
+    min-height: 100vh;
+    width: 100%;
+    /* display */
+    display: grid;
+    place-content: center;
+    /* font */
+    font-family: var(--ff-base);
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: var(--fw-regular);
+
+    /* background */
+    background-color: var(--clr-primary);
+    background-image: url(/images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* display */
+.grid {
+    display: grid;
+}
+
+/* mobile */
+@media screen and (max-width: 600px) {
+    body {
+        background-image: url(/images/bg-mobile.svg);
+        background-size: contain;
+    }
+}
